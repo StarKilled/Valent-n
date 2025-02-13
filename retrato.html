@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrato de Nirvana</title>
+    <style>
+        :root {
+            --heart-color: #ff5873;
+            --background-color: #ebc8c0;
+            --white: #fff;
+        }
+
+        body {
+            font-family: Tahoma;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: var(--heart-color);
+            background-image: url('images/mini-hearth.png');
+            background-size: 75%;
+        }
+
+        .card {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 28px;
+            color: var(--heart-color);
+        }
+
+        .img-fluid {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .text {
+            padding: 20px;
+            font-size: 18px;
+            color: var(--heart-color);
+        }
+
+        .button {
+            background: var(--heart-color);
+            color: var(--white);
+            border: 0 none;
+            padding: 10px 30px;
+            text-align: center;
+            display: inline-block;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button.button__negative {
+            background: var(--white);
+            color: var(--heart-color);
+        }
+
+        .button.button__error,
+        .button.button_siguente {
+            width: 100%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        
+        <img src="nirvanavalewntin.jpeg" alt="Retrato de Nirvana" class="img-fluid">
+        <p class="text">¡La niña mas hermosa del mundo!</p>
+    </div>
+
+    <!-- Audio que se reproduce automáticamente -->
+    <audio controls id="music">
+        <source src="Niña.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <button onclick="play()" type="button" class="button">Play</button>
+    <button onclick="pause()" type="button" class="button button__negative">Pausa</button>
+    <div>
+        <button class="button" onclick="window.location.href='video2.html'">Siguente</button>
+      </div>
+
+    <script>
+        var myMusic = document.getElementById("music");
+
+        function play() {
+            myMusic.play();
+        }
+
+        function pause() {
+            myMusic.pause();
+        }
+    </script>
+</body>
+</html>
