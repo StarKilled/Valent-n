@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostrar Video</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que el archivo CSS esté en la misma carpeta o ajusta la ruta -->
+</head>
+<body>
+  <div class="card">
+    <h1 class="title">El video :D</h1>
+    <div class="animation">
+      <video class="img-fluid" controls>
+        <source src="video.mp4" type="video/mp4"> <!-- Cambia "video.mp4" por la ruta de tu video -->
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+    <p class="text">Este es un video que quiero compartir contigo. ¡Espero que te guste!</p>
+    <div>
+      <button class="button">Me gusta</button>
+      <button class="button button__negative">No me gusta</button>
+    </div>
+    <button class="button button__error" style="display:none;">Error</button>
+  </div>
+</body>
+</html>
