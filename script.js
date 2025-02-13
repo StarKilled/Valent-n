@@ -26,6 +26,8 @@ errorButton.addEventListener('click', ()=>{
   updateDisplay(alternatives[count])
   buttons.forEach(btn => btn.style.display = 'inline-block')
   errorButton.style.display = 'none'
+  sigButton.style.display = 'none'; 
+
 })
 
 buttons.forEach(button => {
