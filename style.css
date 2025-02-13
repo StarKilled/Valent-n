@@ -222,9 +222,8 @@ h1 {
 
 }
 
-
 .button{
-    background: var(--heart-color);
+    background: var(--corazon);
     color:var(--white);
     border: 0 none;
     padding:10px 30px;
